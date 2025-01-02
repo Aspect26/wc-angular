@@ -11,7 +11,7 @@ export class WalletConnectModalService {
   private modal: AppKit | null = null;
 
   public init() {
-    const projectId: string = 'e1d2e7d8e68fb4328008d11702037517';
+    const projectId: string = ''; // TODO: set your projectId here :)
     const networks: [AppKitNetwork, ...AppKitNetwork[]] = [mainnet, polygon, base, avalanche, solana];
 
     const adapter: AdapterBlueprint = new WagmiAdapter({
